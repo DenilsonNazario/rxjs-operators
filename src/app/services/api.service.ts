@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, concat, forkJoin, interval, merge, zip } from 'rxjs';
+import { Observable, concat, forkJoin, interval, map, merge, zip } from 'rxjs';
 import { Api } from '../enum/api';
 
 @Injectable({
@@ -48,4 +48,18 @@ export class ApiService {
     return result$;
   }
 
+  getUserHttp(){
+    const http$ = this.http.get(Api.URL_EXTERNA).pipe(
+      map((data: any) => data.title)
+    )
+    return http$;
+  }
+
+  getUserSwitchMap(){
+    return this.http.get('http://localhost:3000/user')
+  }
+
+  getUserSwitchMapSerach(cpf: string){
+    return this.http.get(`${Api.URL_LOCAL}?cpf=${cpf}`)
+  }
 }

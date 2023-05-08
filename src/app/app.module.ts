@@ -15,7 +15,10 @@ import { AjaxComponent } from './components/operadores-criacao/ajax/ajax.compone
 import { ForkjoinComponent } from './components/operadores-criacao-juncao/forkjoin/forkjoin.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ZipComponent } from './components/operadores-criacao-juncao/zip/zip.component';
-import { MergeConcatComponent } from './components/operadores-criacao-juncao/merge-concat/merge-concat.component'
+import { MergeConcatComponent } from './components/operadores-criacao-juncao/merge-concat/merge-concat.component';
+import { MapComponent } from './components/operadores-transformacao/map/map.component';
+import { MapToComponent } from './components/operadores-transformacao/map-to/map-to.component';
+import { SwitchMapComponent } from './components/operadores-transformacao/switch-map/switch-map.component'
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { MergeConcatComponent } from './components/operadores-criacao-juncao/mer
     AjaxComponent,
     ForkjoinComponent,
     ZipComponent,
-    MergeConcatComponent
+    MergeConcatComponent,
+    MapComponent,
+    MapToComponent,
+    SwitchMapComponent
   ],
   imports: [
     BrowserModule,
