@@ -1,0 +1,25 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "denilson",
+            "email": "email@email.com",
+            "cpf": "67113772064"
+        },
+        {
+            "id": 2,
+            "name": "Leo",
+            "email": "leo@email.com",
+            "cpf": "27487151018"
+        },
+        {
+            "id": 3,
+            "name": "Amanda",
+            "email": "amanda@email.com",
+            "cpf": "77471707003"
+        }
+    ],
+    "user": {
+        "cpf": "77030616030"
+    }
+}
